@@ -1,0 +1,10 @@
+body{
+  background-color: rgba(0, 70, 67, 0.7);
+  background-size: cover;
+  font-family: "Montserrat";
+  position: absolute;
+  top:40%;
+  left: 50%;
+  height: 200px;
+  margin: -300px 0 0 -400px
+}

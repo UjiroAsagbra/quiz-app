@@ -1,0 +1,105 @@
+
+.leaderboard{
+  color: white;
+  margin-left: 19rem;
+
+}
+.player-list {
+  min-width: 93rem;
+  margin: 2rem auto;
+  margin-left: -22.5rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background:rgba(239, 240, 243, 1);
+  padding: 1rem;
+  border-top-left-radius: 5% 7%;
+  border-top-right-radius: 5% 7%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  list-style: none;
+  
+}
+
+/* 🏆 Top 3 Players - Podium */
+.podium {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: -1.5rem;
+  margin-left: -20rem;
+}
+
+.podium div {
+  width: 120px;
+  height: 80px;
+  background: #ddd;
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 2rem;
+  position: relative;
+}
+
+/* 🥇 Gold (1st place) */
+.podium .first {
+  
+  height: 100px;
+  
+  margin-bottom: 5rem;
+}
+
+/* 🥈 Silver (2nd place) */
+.podium .second {
+  
+  height: 100px;
+}
+
+/* 🥉 Bronze (3rd place) */
+.podium .third {
+  height: 100px;
+}
+
+
+
+.player-list li {
+  background:rgba(239, 240, 243, 1);
+  padding: 0.1rem;
+  margin: 0.5rem 0 ;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.score{
+  margin-left: 10rem;
+  margin-top: -1rem;
+
+}
+
+
+
+/* 🔽 Responsive Design */
+@media (max-width: 480px) {
+  .podium {
+    gap: 0.5rem;
+  }
+  
+  .podium div {
+    width: 80px;
+    height: 70px;
+  }
+  
+  .podium .first {
+    height: 100px;
+  }
+  
+  .podium .second {
+    height: 90px;
+  }
+}
