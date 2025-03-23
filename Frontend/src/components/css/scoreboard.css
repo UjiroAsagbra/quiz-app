@@ -86,8 +86,18 @@
 
 /* 🔽 Responsive Design */
 @media (max-width: 480px) {
+
+  .scoreboard{
+    width: 20rem;
+  }
+
+  .leaderboard{
+    margin-top: 4rem;
+  }
   .podium {
+    margin-left: 23rem;
     gap: 0.5rem;
+    
   }
   
   .podium div {

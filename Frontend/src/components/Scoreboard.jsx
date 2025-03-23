@@ -22,7 +22,7 @@ const Scoreboard = () => {
   };
 
   return (
-    <div>
+    <div className="scoreboard">
       <h2 className="leaderboard">Leaderboard</h2>
       <div className="podium">
         {leaderboard.length > 0 ? (

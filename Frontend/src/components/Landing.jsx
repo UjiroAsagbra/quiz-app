@@ -1,17 +1,28 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "../components/css/landing.css";
+import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
   const [user, setUser] = useState("");
+  const navigate = useNavigate();
 
   const handleUser = (e) => {
+   
     setUser(e.target.value); // Update state first
   };
 
+  const handleStart= ()=> {
+    if (!user) {
+      alert("Enter username")
+      navigate("/");
+    }else{
+      navigate("/questions");
+    }
+  }
   // Use useEffect to update localStorage AFTER state updates
   useEffect(() => {
-    if (user) {
+       if (user) {
       localStorage.setItem("user", user);
     }
   }, [user]); // Runs whenever user changes
@@ -37,7 +48,9 @@ const Landing = () => {
         <li>Have Fun & Learn! – The quiz is meant to be engaging and educational, so enjoy the process!</li>
       </ol>
 
-      <Link className="btn" to="/questions">Start</Link>
+      <button 
+      onClick={handleStart}
+      className="btn" >Start</button>
     </div>
   );
 };

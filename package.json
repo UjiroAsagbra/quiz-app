@@ -15,9 +15,12 @@
   "devDependencies": {
     "nodemon": "^3.1.9"
   },
-  "scripts": {
-    "dev": "nodemon backend/server.js"
-  },
+"scripts": {
+  "dev": "nodemon backend/server.js",
+  "build": "cd frontend && npm install && npm run build",
+  "start": "node backend/server.js",
+  "vercel-build": "npm run build"
+},
   "type": "module",
   "keywords": [],
   "author": "",

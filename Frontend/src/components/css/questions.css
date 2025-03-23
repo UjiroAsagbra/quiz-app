@@ -1,7 +1,7 @@
 .q{
   background-color: rgb(243, 238, 238);
   min-height: 101.5vh;
-  max-width: 63rem;
+  width: 100%;
   margin-left: -35rem;
   padding-left: 45rem;
   margin-top: 0rem;
@@ -125,16 +125,14 @@ input[type="radio"]:focus + label::after {
 
 
 @media (max-width: 600px) {
-  body{
-    max-width: 100rem;
-  }
+  
 
   .progressbar{
     margin-left: 0rem;
   }
   
   .head {
-    padding-top: 0.5rem;
+    padding-top: 1.5rem;
     padding-left: 0.5rem;
     gap:15rem;
     margin-top:1.25rem;
@@ -144,8 +142,8 @@ input[type="radio"]:focus + label::after {
 
 
   .question {
-    width: 34.5%;
-    margin-left: 3.9rem;
+    width: 70.5%;
+    margin-left: 4rem;
   min-height: 15vh;
   padding-left: 1rem;
   padding-top: 2rem;
@@ -157,7 +155,7 @@ input[type="radio"]:focus + label::after {
     width: 1rem;
   margin-left: 2rem;
   padding-left: 2rem;
-  padding-right: 1rem; /* Ensure space */
+  padding-right: 1rem;
   margin-right: 15rem;
   
   }
@@ -170,7 +168,8 @@ input[type="radio"]:focus + label::after {
   }
 
   .btn-green {
-    max-width: 90%;
+    max-width: 80%;
     padding: 1rem;
+    margin-left: 3.5rem;
   }
 }

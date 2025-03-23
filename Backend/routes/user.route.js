@@ -4,6 +4,8 @@ import {updateUserScore} from '../controllers/user.controller.js';
 import auth from '../middleware/auth.js';
 import { checkValidation } from '../middleware/validation.js';
 
+const router = express.Router();
+
 router.post(
   '/score',
   [

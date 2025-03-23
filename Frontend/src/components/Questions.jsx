@@ -34,6 +34,9 @@ const Questions = () => {
   };
 
   const handlePrev = () => {
+    if (activeQuestion <=0){
+      navigate("/")
+    }
     setActiveQuestion((prev) => prev - 1);
   };
 
@@ -57,10 +60,7 @@ const Questions = () => {
     const username = localStorage.getItem("user"); // Get username
     const score = correctCount; // Get score
   
-    if (!username) {
-      alert("Please enter your name on the landing page.");
-      return;
-    }
+   
   
     try {
       const response = await fetch("http://localhost:5000/api/quiz/save-score", {
