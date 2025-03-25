@@ -12,7 +12,7 @@ const Questions = () => {
 
   // Fetch questions from backend
   useEffect(() => {
-    fetch("http://localhost:5000/api/quiz/questions") // Call API to get random questions
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/quiz/questions`) // Call API to get random questions
       .then((res) => res.json())
       .then((data) => setQuestions(data))
       .catch((err) => console.error("Error fetching questions:", err));

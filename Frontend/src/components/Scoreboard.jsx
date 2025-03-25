@@ -7,7 +7,7 @@ const Scoreboard = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/quiz/leaderboard")
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/quiz/leaderboard`)
       .then((response) => response.json())
       .then((data) => setLeaderboard(data))
       .catch((error) => console.error("Error fetching leaderboard:", error));
