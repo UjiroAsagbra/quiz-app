@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Counting from "./CountdownTimer.jsx";
+import Counting from "./Countdowntimer";
 import "./css/questions.css";
 import { useNavigate } from "react-router-dom";
 
