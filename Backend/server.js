@@ -8,9 +8,18 @@ dotenv.config();
 
 const app = express();
 
-// Middleware
+
 app.use(express.json());
-app.use(cors()); 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://quiz-app-frontend-livid.vercel.app/" 
+];
+
+app.use(cors({
+  origin: allowedOrigins, 
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
 
 
 
