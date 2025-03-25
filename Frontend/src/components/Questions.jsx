@@ -12,7 +12,7 @@ const Questions = () => {
 
   // Fetch questions from backend
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/quiz/questions`) // Call API to get random questions
+    fetch("https://quiz-app-backend-qmdw8awkv-ujays-projects.vercel.app/api/quiz/questions") // Call API to get random questions
       .then((res) => res.json())
       .then((data) => setQuestions(data))
       .catch((err) => console.error("Error fetching questions:", err));
@@ -63,7 +63,7 @@ const Questions = () => {
    
   
     try {
-      const response = await fetch("http://localhost:5000/api/quiz/save-score", {
+      const response = await fetch("https://quiz-app-backend-qmdw8awkv-ujays-projects.vercel.app/api/quiz/save-score", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, score }),
