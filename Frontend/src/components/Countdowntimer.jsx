@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./css/counting.css"; // Import the external CSS
-import Questions from "./Questions";
+
 
 const Counting = ({onTimeUp }) => {
   const [progressPercent, setProgressPercent] = useState(0);
